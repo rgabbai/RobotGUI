@@ -12,10 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="580dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="@string/Conect"
+        android:text="@string/Connect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,21 +26,92 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/number"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/connection" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="157dp"
-        android:layout_height="139dp"
-        app:srcCompat="@mipmap/ic_launcher_icon"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="90dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="320dp"
+        android:layout_marginRight="320dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_icon" />
+
+    <ImageButton
+        android:id="@+id/JoyButton"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="328dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:background="@drawable/image_button_selector"
+        app:srcCompat="@drawable/joy1" />
+
+    <ImageButton
+        android:id="@+id/ReplayButton"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/image_button_selector"
+        app:srcCompat="@drawable/playback1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="172dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+
+        android:text="Robot App version 0.0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/FollowMeButton"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/image_button_selector"
+        app:srcCompat="@drawable/follome5" />
+
+    <ImageButton
+        android:id="@+id/MoveAwayButton"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:padding="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="208dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        android:background="@drawable/image_button_selector"
+        app:srcCompat="@drawable/moveaway2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@
     <string name="textXYpage">Enter place name:</string>
     <string name="id_list">list</string>
     <string name="goBack">Return</string>
-    <string name="Conect">Conection test</string>
+    <string name="Connect">Connect to Robot</string>
     <string name="send">send msg</string>
     <string name="number">-</string>
 </resources>

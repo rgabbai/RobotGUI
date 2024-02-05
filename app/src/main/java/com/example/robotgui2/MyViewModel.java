@@ -20,23 +20,23 @@ public class MyViewModel extends ViewModel {
     private int i = 0;
     private ExecutorService executorService = Executors.newSingleThreadExecutor();
 
-    public LiveData<String> getNumber() {
-        return numberLiveData;
-    }
+    //public LiveData<String> getNumber() {
+    //    return numberLiveData;
+    //}
 
-    public void sendNumber() {
+    public void Write2WebSocket(String messageToSend) {
         // Use an executor to perform the background task
         executorService.execute(() -> {
             try {
-                String mens = String.valueOf(i++);
+                //String mens = String.valueOf(i++);
                 if (socket == null || socket.isClosed()) {
-                    // Adjust IP and port as necessary
+                    // Adjust IP and port of robot device
                     socket = new Socket("10.242.90.83", 6000);
                     writer = new PrintWriter(socket.getOutputStream(), true);
-                    Log.i("Socket", "Connected to server");
+                    Log.i("Socket", "Connected to robot");
                 }
-                writer.println(mens); // Send the number over the socket
-                numberLiveData.postValue(mens); // Update LiveData for UI
+                writer.println(messageToSend); // Send the number over the socket
+                numberLiveData.postValue(messageToSend); // Update LiveData for UI
             } catch (IOException e) {
                 e.printStackTrace();
                 numberLiveData.postValue("Error: " + e.getMessage());
