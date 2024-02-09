@@ -21,6 +21,14 @@ public class JoyActivity extends AppCompatActivity {
         ImageButton topB    = findViewById(R.id.topButton);
         ImageButton bottomB = findViewById(R.id.bottomButton);
         ImageButton stopB   = findViewById(R.id.stopButton);
+        ImageButton mowerB  = findViewById(R.id.mowerButton);
+
+        mowerB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedRepository.getInstance().sendMessage("Joy_Mower");
+            }
+        });
 
         leftB.setOnClickListener(new View.OnClickListener() {
             @Override

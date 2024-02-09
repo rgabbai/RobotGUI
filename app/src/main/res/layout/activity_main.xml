@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/ipAddressInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:hint="Enter Robot IP Address"
+        android:inputType="text"
+        android:text="10.242.202.105"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/connection"
         android:layout_width="409dp"
@@ -21,18 +35,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/response"
+        android:layout_width="378dp"
+        android:layout_height="59dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/number"
-        android:textSize="36sp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/text_colorRed"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/connection" />
 
@@ -40,6 +54,7 @@
         android:id="@+id/imageView"
         android:layout_width="90dp"
         android:layout_height="64dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="320dp"
         android:layout_marginRight="320dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,35 +67,37 @@
         android:layout_height="110dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/image_button_selector"
         android:padding="8dp"
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        android:background="@drawable/image_button_selector"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/joy1" />
 
     <ImageButton
         android:id="@+id/ReplayButton"
         android:layout_width="160dp"
         android:layout_height="110dp"
-        android:layout_marginTop="344dp"
+        android:layout_marginTop="352dp"
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
+        android:background="@drawable/image_button_selector"
         android:padding="8dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/image_button_selector"
         app:srcCompat="@drawable/playback1" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="172dp"
         android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+
         android:layout_marginTop="16dp"
         android:padding="8dp"
-
         android:text="Robot App version 0.0"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -90,28 +107,28 @@
         android:id="@+id/FollowMeButton"
         android:layout_width="160dp"
         android:layout_height="110dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="232dp"
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
+        android:background="@drawable/image_button_selector"
         android:padding="8dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/image_button_selector"
         app:srcCompat="@drawable/follome5" />
 
     <ImageButton
         android:id="@+id/MoveAwayButton"
         android:layout_width="160dp"
         android:layout_height="110dp"
-        android:padding="8dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="232dp"
+        android:background="@drawable/image_button_selector"
+        android:padding="8dp"
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        android:background="@drawable/image_button_selector"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/moveaway2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

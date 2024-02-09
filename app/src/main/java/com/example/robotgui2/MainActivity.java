@@ -1,10 +1,13 @@
 package com.example.robotgui2;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.Observer;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -18,6 +21,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import android.view.View;
@@ -28,7 +32,7 @@ import android.content.Intent;
 public class MainActivity extends AppCompatActivity {
 
     Button connection;
-    TextView number;
+    TextView responseView;
     //MyViewModel viewModel;
 
     ImageButton MoveAwayButton;
@@ -36,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton JoyButton;
     ImageButton ReplayButton;
 
-
-
+    //EditText ipAddr = findViewById(R.id.ipAddressInput);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,11 +51,24 @@ public class MainActivity extends AppCompatActivity {
         //viewModel = new ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(this.getApplication())).get(MyViewModel.class);
 
         // Initiate TCP socket connection
-        SharedRepository.getInstance().initConnection();
+        //SharedRepository.getInstance().initConnection();
 
 
         connection = findViewById(R.id.connection);
-        number = findViewById(R.id.number);
+        responseView = findViewById(R.id.response);
+        responseView.setText("Robot offline");
+
+        // Get response from server (robot)
+        SharedRepository.getInstance().getResponseLiveData().observe(this, response -> {
+            // Update your UI here with the new response
+            responseView.setText(response);
+            //Log.d("StatusDebug", "Status: " + response);
+            if ("Robot online".equals(response)) {
+                responseView.setTextColor(getResources().getColor(R.color.text_colorGreen));
+            }
+        });
+
+        
 
         // Functions buttons
         MoveAwayButton = findViewById(R.id.MoveAwayButton);
@@ -69,7 +85,21 @@ public class MainActivity extends AppCompatActivity {
         //});
 
         //connection.setOnClickListener(view -> viewModel.Write2WebSocket("Connect"));
-        connection.setOnClickListener(view -> SharedRepository.getInstance().sendMessage("Hello Robot"));
+        //connection.setOnClickListener(view -> SharedRepository.getInstance().sendMessage("Hello Robot"));
+
+        connection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Connect clicked!", Toast.LENGTH_SHORT).show();
+                // Handle the ImageButton click
+                //viewModel.Write2WebSocket("joy");
+                SharedRepository.getInstance().sendMessage("Hello Robot");
+                // Initiate TCP socket connection
+                EditText ipAddressInput = findViewById(R.id.ipAddressInput); // Assuming you have an EditText for IP input
+                String ipAddress = ipAddressInput.getText().toString();
+                SharedRepository.getInstance().initConnection(ipAddress);
+            }
+        });
 
 
         JoyButton.setOnClickListener(new View.OnClickListener() {
@@ -116,6 +146,29 @@ public class MainActivity extends AppCompatActivity {
                 // Handle the ImageButton click
             }
         });
+
+
+        // You can now use the ipAddress string to connect, save, or validate.
+        /*
+        ipAddr.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                // Nothing needed here.
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                // Validate the IP address here if needed.
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                // This is called after the text has changed.
+                // Additional validation can be performed here if necessary.
+
+            }
+        });
+       */
 
     }
 }

@@ -35,23 +35,6 @@
         android:text="Joystick mode"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="172dp"
-        android:layout_height="134dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="114dp"
-        android:layout_marginLeft="114dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="123dp"
-        android:layout_marginRight="123dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/joy" />
-
     <ImageButton
         android:id="@+id/bottomButton"
         android:layout_width="136dp"
@@ -138,5 +121,24 @@
         android:background="@drawable/image_button_selector"
         android:padding="8dp"
         app:srcCompat="@drawable/stop" />
+
+    <ImageButton
+        android:id="@+id/mowerButton"
+        android:layout_width="138dp"
+        android:layout_height="123dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        android:scaleType="fitXY"
+        android:padding="8dp"
+        android:background="@drawable/image_button_selector"
+        app:srcCompat="@drawable/mower" />
 
 </RelativeLayout>

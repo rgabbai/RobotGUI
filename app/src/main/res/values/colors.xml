@@ -5,4 +5,6 @@
     <color name="colorAccent">#D81B60</color>
     <color name="BcolorPressed">#11D455</color>
     <color name="BcolorNormal">#F0F2F0</color>
+    <color name="text_colorGreen">#00FF00</color>
+    <color name="text_colorRed">#FF0000</color>
 </resources>
