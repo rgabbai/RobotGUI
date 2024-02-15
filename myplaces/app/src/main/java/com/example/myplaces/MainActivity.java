@@ -57,7 +57,9 @@ public class MainActivity extends AppCompatActivity {
 
                 if(s == null){
                     //change it to your IP
-                    s = new Socket("172.16.42.25",6000);
+                    //s = new Socket("192.168.2.113",6000);
+                    s = new Socket("10.242.90.83",6000);
+
                     writer = new PrintWriter(s.getOutputStream());
                     Log.i("i", "CONNECTED");
                 }

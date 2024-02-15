@@ -1,0 +1,170 @@
+[0.000000] (-) TimerEvent: {}
+[0.000349] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.001131] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.019807] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.020232] (cpp_pubsub) Command: {'cmd': ['/usr/local/bin/cmake', '/home/rgabbai/projects/Android/ROS_2_ANDROID', '-DCMAKE_INSTALL_PREFIX=/home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub'], 'cwd': '/home/rgabbai/projects/Android/ROS_2_ANDROID/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'rgabbai'), ('SSH_AGENT_PID', '2175'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rgabbai'), ('OLDPWD', '/home/rgabbai/projects/Android/ROS_2_ANDROID/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1998'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rgabbai'), ('JOURNAL_STREAM', '8:53445'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('ROS1_INSTALL_PATH', '/opt/ros/noetic'), ('USERNAME', 'rgabbai'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS2_INSTALL_PATH', '/opt/ros/foxy/'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/rgabbai/gems/bin:/opt/ros/foxy/bin:/home/rgabbai/.cargo/bin:/home/rgabbai/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rgabbai-H87M-HD3:@/tmp/.ICE-unix/2213,unix/rgabbai-H87M-HD3:/tmp/.ICE-unix/2213'), ('INVOCATION_ID', '5e8c4a2d270e44269d64e419ad9a5a62'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c1bd09f4_e259_4ea9_8345_6d688236ab7f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_IL'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/rgabbai/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rgabbai/projects/Android/ROS_2_ANDROID/build/cpp_pubsub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('ANDROID_NDK', '/home/rgabbai/Android/Sdk/ndk/26.1.10909125/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099817] (-) TimerEvent: {}
+[0.200227] (-) TimerEvent: {}
+[0.300545] (-) TimerEvent: {}
+[0.400439] (cpp_pubsub) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.400717] (-) TimerEvent: {}
+[0.500976] (-) TimerEvent: {}
+[0.601328] (-) TimerEvent: {}
+[0.619144] (cpp_pubsub) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.653578] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.701463] (-) TimerEvent: {}
+[0.746642] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.763532] (cpp_pubsub) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.764247] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.764981] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.779769] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.801562] (-) TimerEvent: {}
+[0.868720] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.886561] (cpp_pubsub) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.887004] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.887724] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.901665] (-) TimerEvent: {}
+[0.902314] (cpp_pubsub) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.908997] (cpp_pubsub) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[0.909162] (cpp_pubsub) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[0.909245] (cpp_pubsub) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[0.909320] (cpp_pubsub) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.909390] (cpp_pubsub) StderrLine: {'line': b'\n'}
+[0.909459] (cpp_pubsub) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.909526] (cpp_pubsub) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[0.909593] (cpp_pubsub) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[0.909660] (cpp_pubsub) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.909726] (cpp_pubsub) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.909813] (cpp_pubsub) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.909880] (cpp_pubsub) StderrLine: {'line': b'  CMakeLists.txt:13 (find_package)\n'}
+[0.909958] (cpp_pubsub) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.910027] (cpp_pubsub) StderrLine: {'line': b'\x1b[0m\n'}
+[0.934225] (cpp_pubsub) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.934465] (cpp_pubsub) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.001759] (-) TimerEvent: {}
+[1.102118] (-) TimerEvent: {}
+[1.202411] (-) TimerEvent: {}
+[1.208652] (cpp_pubsub) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.302526] (-) TimerEvent: {}
+[1.306451] (cpp_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.319970] (cpp_pubsub) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.402636] (-) TimerEvent: {}
+[1.466632] (cpp_pubsub) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.502750] (-) TimerEvent: {}
+[1.504563] (cpp_pubsub) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.602866] (-) TimerEvent: {}
+[1.649430] (cpp_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.702965] (-) TimerEvent: {}
+[1.764148] (cpp_pubsub) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.768402] (cpp_pubsub) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.771499] (cpp_pubsub) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.803065] (-) TimerEvent: {}
+[1.857505] (cpp_pubsub) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.857839] (cpp_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.903207] (-) TimerEvent: {}
+[1.917697] (cpp_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.917974] (cpp_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.989246] (cpp_pubsub) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.990693] (cpp_pubsub) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.003294] (-) TimerEvent: {}
+[2.103592] (-) TimerEvent: {}
+[2.203946] (-) TimerEvent: {}
+[2.251788] (cpp_pubsub) StdoutLine: {'line': b'-- Configuring done (2.1s)\n'}
+[2.266488] (cpp_pubsub) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.268305] (cpp_pubsub) StdoutLine: {'line': b'-- Build files have been written to: /home/rgabbai/projects/Android/ROS_2_ANDROID/build/cpp_pubsub\n'}
+[2.281984] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[2.282839] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[2.284982] (cpp_pubsub) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/rgabbai/projects/Android/ROS_2_ANDROID/build/cpp_pubsub', '--', '-j4', '-l4'], 'cwd': '/home/rgabbai/projects/Android/ROS_2_ANDROID/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'rgabbai'), ('SSH_AGENT_PID', '2175'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rgabbai'), ('OLDPWD', '/home/rgabbai/projects/Android/ROS_2_ANDROID/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1998'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rgabbai'), ('JOURNAL_STREAM', '8:53445'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('ROS1_INSTALL_PATH', '/opt/ros/noetic'), ('USERNAME', 'rgabbai'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS2_INSTALL_PATH', '/opt/ros/foxy/'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/rgabbai/gems/bin:/opt/ros/foxy/bin:/home/rgabbai/.cargo/bin:/home/rgabbai/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rgabbai-H87M-HD3:@/tmp/.ICE-unix/2213,unix/rgabbai-H87M-HD3:/tmp/.ICE-unix/2213'), ('INVOCATION_ID', '5e8c4a2d270e44269d64e419ad9a5a62'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c1bd09f4_e259_4ea9_8345_6d688236ab7f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_IL'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/rgabbai/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rgabbai/projects/Android/ROS_2_ANDROID/build/cpp_pubsub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('ANDROID_NDK', '/home/rgabbai/Android/Sdk/ndk/26.1.10909125/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.304036] (-) TimerEvent: {}
+[2.337263] (cpp_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[2.337619] (cpp_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o\x1b[0m\n'}
+[2.404160] (-) TimerEvent: {}
+[2.504444] (-) TimerEvent: {}
+[2.604765] (-) TimerEvent: {}
+[2.705127] (-) TimerEvent: {}
+[2.805438] (-) TimerEvent: {}
+[2.905756] (-) TimerEvent: {}
+[3.006059] (-) TimerEvent: {}
+[3.106386] (-) TimerEvent: {}
+[3.206694] (-) TimerEvent: {}
+[3.307004] (-) TimerEvent: {}
+[3.407327] (-) TimerEvent: {}
+[3.507658] (-) TimerEvent: {}
+[3.607996] (-) TimerEvent: {}
+[3.708332] (-) TimerEvent: {}
+[3.808658] (-) TimerEvent: {}
+[3.908990] (-) TimerEvent: {}
+[4.009327] (-) TimerEvent: {}
+[4.109660] (-) TimerEvent: {}
+[4.210000] (-) TimerEvent: {}
+[4.310351] (-) TimerEvent: {}
+[4.410695] (-) TimerEvent: {}
+[4.510996] (-) TimerEvent: {}
+[4.611302] (-) TimerEvent: {}
+[4.711611] (-) TimerEvent: {}
+[4.811926] (-) TimerEvent: {}
+[4.912212] (-) TimerEvent: {}
+[5.012544] (-) TimerEvent: {}
+[5.112882] (-) TimerEvent: {}
+[5.213182] (-) TimerEvent: {}
+[5.313517] (-) TimerEvent: {}
+[5.413820] (-) TimerEvent: {}
+[5.514172] (-) TimerEvent: {}
+[5.614513] (-) TimerEvent: {}
+[5.714870] (-) TimerEvent: {}
+[5.755263] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[5.814990] (-) TimerEvent: {}
+[5.915327] (-) TimerEvent: {}
+[5.954212] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] Built target talker\n'}
+[6.015440] (-) TimerEvent: {}
+[6.115795] (-) TimerEvent: {}
+[6.216108] (-) TimerEvent: {}
+[6.316478] (-) TimerEvent: {}
+[6.416857] (-) TimerEvent: {}
+[6.517189] (-) TimerEvent: {}
+[6.617542] (-) TimerEvent: {}
+[6.717887] (-) TimerEvent: {}
+[6.818225] (-) TimerEvent: {}
+[6.918588] (-) TimerEvent: {}
+[7.018943] (-) TimerEvent: {}
+[7.119266] (-) TimerEvent: {}
+[7.219599] (-) TimerEvent: {}
+[7.319903] (-) TimerEvent: {}
+[7.420254] (-) TimerEvent: {}
+[7.520612] (-) TimerEvent: {}
+[7.620989] (-) TimerEvent: {}
+[7.721295] (-) TimerEvent: {}
+[7.821643] (-) TimerEvent: {}
+[7.825229] (cpp_pubsub) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable listener\x1b[0m\n'}
+[7.921777] (-) TimerEvent: {}
+[8.022126] (-) TimerEvent: {}
+[8.084535] (cpp_pubsub) StdoutLine: {'line': b'[100%] Built target listener\n'}
+[8.094110] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[8.122271] (-) TimerEvent: {}
+[8.150512] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'install'}
+[8.189544] (cpp_pubsub) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/rgabbai/projects/Android/ROS_2_ANDROID/build/cpp_pubsub'], 'cwd': '/home/rgabbai/projects/Android/ROS_2_ANDROID/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IL:en'), ('USER', 'rgabbai'), ('SSH_AGENT_PID', '2175'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rgabbai'), ('OLDPWD', '/home/rgabbai/projects/Android/ROS_2_ANDROID/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1998'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rgabbai'), ('JOURNAL_STREAM', '8:53445'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('ROS1_INSTALL_PATH', '/opt/ros/noetic'), ('USERNAME', 'rgabbai'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS2_INSTALL_PATH', '/opt/ros/foxy/'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/rgabbai/gems/bin:/opt/ros/foxy/bin:/home/rgabbai/.cargo/bin:/home/rgabbai/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rgabbai-H87M-HD3:@/tmp/.ICE-unix/2213,unix/rgabbai-H87M-HD3:/tmp/.ICE-unix/2213'), ('INVOCATION_ID', '5e8c4a2d270e44269d64e419ad9a5a62'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c1bd09f4_e259_4ea9_8345_6d688236ab7f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_IL'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/rgabbai/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rgabbai/projects/Android/ROS_2_ANDROID/build/cpp_pubsub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('ANDROID_NDK', '/home/rgabbai/Android/Sdk/ndk/26.1.10909125/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[8.221088] (cpp_pubsub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.221376] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/lib/cpp_pubsub/talker\n'}
+[8.222234] (cpp_pubsub) StdoutLine: {'line': b'-- Set runtime path of "/home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""\n'}
+[8.222396] (-) TimerEvent: {}
+[8.222554] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/lib/cpp_pubsub/listener\n'}
+[8.224402] (cpp_pubsub) StdoutLine: {'line': b'-- Set runtime path of "/home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""\n'}
+[8.224604] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub\n'}
+[8.224790] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub\n'}
+[8.224953] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh\n'}
+[8.225074] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv\n'}
+[8.225198] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh\n'}
+[8.225343] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv\n'}
+[8.225473] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash\n'}
+[8.225610] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh\n'}
+[8.225850] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh\n'}
+[8.225956] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv\n'}
+[8.226062] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/package.dsv\n'}
+[8.226184] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub\n'}
+[8.226339] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake\n'}
+[8.226451] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake\n'}
+[8.226578] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/rgabbai/projects/Android/ROS_2_ANDROID/install/cpp_pubsub/share/cpp_pubsub/package.xml\n'}
+[8.231489] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[8.322696] (-) TimerEvent: {}
+[8.327906] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 0}
+[8.328615] (-) EventReactorShutdown: {}
